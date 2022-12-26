@@ -14,8 +14,8 @@ import CartList from "./components/Cart/CartList";
 
 function App() {
   return (
-    <DataProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <DataProvider>
         <div className="flex flex-col justify-center items-center w-full">
           <NavBar />
           <ToastContainer limit={1} />
@@ -23,8 +23,8 @@ function App() {
           <Route path="/products/:id" component={ProductDetail} />
           <Route path="/checkout" component={CartList} />
         </div>
-      </BrowserRouter>
-    </DataProvider>
+      </DataProvider>
+    </BrowserRouter>
   );
 }
 

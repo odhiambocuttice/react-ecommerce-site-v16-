@@ -19,7 +19,7 @@ function ProductCart({ id, title, name, price }) {
         <ProductImage name={name} className="w-60 h-48" />
       </div>
 
-      <div className="ml-[-140px] border p-4 border-black">{count}</div>
+      <div className="ml-[-80px] border p-4 border-black">{count}</div>
       <h1 className=" text-xl font-semibold">$ {totalProductPrice}</h1>
     </div>
   );

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 
 import ProductAmount from "../ProductAmount";
 import ProductDescription from "../ProductDescription";

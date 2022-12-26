@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "12.1.5",
     "lodash": "^4.17.21",
     "react": "16.8.4",
     "react-dom": "16.8.4",

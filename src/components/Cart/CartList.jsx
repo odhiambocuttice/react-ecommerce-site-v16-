@@ -20,7 +20,7 @@ const CartList = () => {
       </div>
       <ul>
         {uniqueList.map((item, index) => (
-          <div className="">
+          <div key={index}>
             <div className="border-solid border-b border-white" />
             <ProductCart
               key={index}
@@ -34,8 +34,14 @@ const CartList = () => {
       </ul>
       <div className="border-solid border-b border-white" />
 
-      <h1 className="text-2xl font-black text-end mx-8 my-4">
-        <span className="text-base font-light">Sub Total: </span> ${totalPrice}
+      <h1
+        className="text-2xl font-black text-end mx-8 my-4"
+        data-testid="total-price"
+      >
+        <span className="text-base font-light" data-testid="sub-total">
+          Sub Total:
+        </span>
+        ${totalPrice}
       </h1>
     </div>
   );
