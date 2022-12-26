@@ -5,7 +5,7 @@ import { DataContext } from "../context/DataContext";
 export const NavBar = () => {
   const { items } = useContext(DataContext);
   return (
-    <nav className="text-gray-500 max-w-4xl p-5 sticky top-0 w-full flex justify-around items-center border-solid border-b-2 border-black">
+    <nav className="text-gray-500 max-w-4xl p-5 sticky top-0 w-full flex justify-around items-center border-solid border-b-2 border-black bg-[#faebd7]">
       <Link to="/">Ecommerce site</Link>
 
       <div className="flex gap-7">

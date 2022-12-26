@@ -16,15 +16,16 @@ function ProductDetail() {
   const { addToCart } = useContext(DataContext);
 
   return (
-    <div className="flex items-center p-4 my-4 justify-around max-w-4xl">
-      <ProductImage name={product.name} className="w-4/6 h-full" />
-      <div className="flex flex-col items-center justify-center w-1/2 p-6">
+    <div className="flex flex-col lg:flex-row items-center p-4 my-4 justify-around max-w-4xl">
+      <ProductImage name={product.name} className="w-full lg:w-4/6 h-full" />
+
+      <div className="flex flex-col items-center lg:justify-center w-full lg:w-1/2 px-1 py-4 lg:p-6">
         <div className="flex items-center justify-between w-full">
           <h2 className="text-2xl font-bold">{product.title}</h2>
           <h3 className="text-xl font-bold">$ {product.amount}</h3>
         </div>
 
-        {/* <p className="text-gray-700 text-base mt-2">{product.description}</p> */}
+        {/* <p className="text-gray-700 text-base">{product.description}</p> */}
         <LoremIpsum
           p={1}
           avgWordsPerSentence={8}
