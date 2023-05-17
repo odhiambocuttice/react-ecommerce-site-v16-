@@ -8,6 +8,7 @@
     "lodash": "^4.17.21",
     "react": "16.8.4",
     "react-dom": "16.8.4",
+    "react-helmet": "^6.1.0",
     "react-lorem-ipsum": "^1.4.10",
     "react-redux": "^8.0.5",
     "react-router-dom": "^5.0.1",
